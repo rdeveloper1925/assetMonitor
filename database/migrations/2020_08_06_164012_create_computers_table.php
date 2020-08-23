@@ -24,6 +24,7 @@ class CreateComputersTable extends Migration
             $table->text('Capacity');
             $table->text('Processor');
             $table->text('SN');
+            $table->integer('branch');
             $table->timestamps();
         });
     }

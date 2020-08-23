@@ -16,9 +16,9 @@ class CreatePrintersTable extends Migration
         Schema::create('printers', function (Blueprint $table) {
             $table->integer('PrinterID')->autoIncrement();
             $table->text('PrinterName');
-            $table->text('Branch');
             $table->text('Vendor');
             $table->text('IP');
+            $table->integer('branch');
             $table->timestamps();
         });
     }

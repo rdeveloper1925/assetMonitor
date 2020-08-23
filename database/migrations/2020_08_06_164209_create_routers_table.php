@@ -23,6 +23,7 @@ class CreateRoutersTable extends Migration
             $table->text('RAM');
             $table->text('YearMake');
             $table->text('SN');
+            $table->integer('branch');
             $table->timestamps();
         });
     }
